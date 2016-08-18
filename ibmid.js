@@ -1,7 +1,7 @@
-Accounts.oauth.registerService('ibmid');
+Accounts.oauth.registerService('ibm');
 
 if (Meteor.isClient) {
-  Meteor.loginWithIBMID = function (options, callback) {
+  Meteor.loginWithIbm = function (options, callback) {
     // support a callback without options
     if (!callback && typeof options === "function") {
       callback = options;
@@ -13,7 +13,7 @@ if (Meteor.isClient) {
   }
 } else {
   Accounts.addAutopublishFields({
-    forLoggedInUser: ['services.ibmid'],
-    forOtherUsers: ['services.ibmid.username']
+    forLoggedInUser: ['services.ibm'],
+    forOtherUsers: ['services.ibm.username']
   });
 }
