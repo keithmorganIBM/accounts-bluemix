@@ -12,5 +12,5 @@ Package.onUse(function (api) {
   api.use('keithmorganibm:ibmid@1.0.0', ['client', 'server']);
 
   api.addFiles('ibmid_login_button.css', 'client');
-  api.addFiles("ibm.js");
+  api.addFiles("ibmid.js");
 });

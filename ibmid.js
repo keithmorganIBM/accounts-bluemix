@@ -1,7 +1,7 @@
 Accounts.oauth.registerService('ibmid');
 
 if (Meteor.isClient) {
-  Meteor.loginWithBluemix = function (options, callback) {
+  Meteor.loginWithIBMID = function (options, callback) {
     // support a callback without options
     if (!callback && typeof options === "function") {
       callback = options;
